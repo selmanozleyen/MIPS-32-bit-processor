@@ -1,0 +1,36 @@
+module adder_32(output[31:0] z,output cout,input [31:0] x, input [31:0] y,input cin);
+
+wire[30:0] c;
+full_adder f0(z[0],c[0],x[0],y[0],cin);
+full_adder f1(z[1],c[1],x[1],y[1],c[0]);
+full_adder f2(z[2],c[2],x[2],y[2],c[1]);
+full_adder f3(z[3],c[3],x[3],y[3],c[2]);
+full_adder f4(z[4],c[4],x[4],y[4],c[3]);
+full_adder f5(z[5],c[5],x[5],y[5],c[4]);
+full_adder f6(z[6],c[6],x[6],y[6],c[5]);
+full_adder f7(z[7],c[7],x[7],y[7],c[6]);
+full_adder f8(z[8],c[8],x[8],y[8],c[7]);
+full_adder f9(z[9],c[9],x[9],y[9],c[8]);
+full_adder f10(z[10],c[10],x[10],y[10],c[9]);
+full_adder f11(z[11],c[11],x[11],y[11],c[10]);
+full_adder f12(z[12],c[12],x[12],y[12],c[11]);
+full_adder f13(z[13],c[13],x[13],y[13],c[12]);
+full_adder f14(z[14],c[14],x[14],y[14],c[13]);
+full_adder f15(z[15],c[15],x[15],y[15],c[14]);
+full_adder f16(z[16],c[16],x[16],y[16],c[15]);
+full_adder f17(z[17],c[17],x[17],y[17],c[16]);
+full_adder f18(z[18],c[18],x[18],y[18],c[17]);
+full_adder f19(z[19],c[19],x[19],y[19],c[18]);
+full_adder f20(z[20],c[20],x[20],y[20],c[19]);
+full_adder f21(z[21],c[21],x[21],y[21],c[20]);
+full_adder f22(z[22],c[22],x[22],y[22],c[21]);
+full_adder f23(z[23],c[23],x[23],y[23],c[22]);
+full_adder f24(z[24],c[24],x[24],y[24],c[23]);
+full_adder f25(z[25],c[25],x[25],y[25],c[24]);
+full_adder f26(z[26],c[26],x[26],y[26],c[25]);
+full_adder f27(z[27],c[27],x[27],y[27],c[26]);
+full_adder f28(z[28],c[28],x[28],y[28],c[27]);
+full_adder f29(z[29],c[29],x[29],y[29],c[28]);
+full_adder f30(z[30],c[30],x[30],y[30],c[29]);
+full_adder f31(z[31],cout,x[31],y[31],c[30]);
+endmodule
