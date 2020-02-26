@@ -18,13 +18,14 @@
 #
 # Quartus II 64-Bit
 # Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-# Date created = 20:49:11  January 09, 2020
+# Date created = 04:45:01  February 26, 2020
 #
 # -------------------------------------------------------------------------- #
 
 QUARTUS_VERSION = "13.1"
-DATE = "20:49:11  January 09, 2020"
+DATE = "04:45:01  February 26, 2020"
 
 # Revisions
 
+PROJECT_REVISION = "mips"
 PROJECT_REVISION = "hw4"

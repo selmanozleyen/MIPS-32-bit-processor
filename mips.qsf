@@ -25,7 +25,7 @@
 # Notes:
 #
 # 1) The default values for assignments are stored in the file:
-#		hw4_assignment_defaults.qdf
+#		mips_assignment_defaults.qdf
 #    If this file doesn't exist, see file:
 #		assignment_defaults.qdf
 #
@@ -36,15 +36,13 @@
 # -------------------------------------------------------------------------- #
 
 
-set_global_assignment -name FAMILY "Cyclone V"
-set_global_assignment -name DEVICE 5CGXFC7C7F23C8
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE Auto
 set_global_assignment -name TOP_LEVEL_ENTITY mips32
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:49:05  JANUARY 09, 2020"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "04:45:01  FEBRUARY 26, 2020"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
-set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
-set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
@@ -56,31 +54,31 @@ set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name SEARCH_PATH hw4/ -tag from_archive
-set_global_assignment -name VERILOG_FILE hw4/xor_2.v
-set_global_assignment -name VERILOG_FILE hw4/shifter.v
-set_global_assignment -name VERILOG_FILE hw4/pc.v
-set_global_assignment -name VERILOG_FILE hw4/mux_testbench.v
-set_global_assignment -name VERILOG_FILE hw4/mux_8x1.v
-set_global_assignment -name VERILOG_FILE hw4/mux_4x1_32.v
-set_global_assignment -name VERILOG_FILE hw4/mux_4x1.v
-set_global_assignment -name VERILOG_FILE hw4/mux_2x1_32.v
-set_global_assignment -name VERILOG_FILE hw4/mux_2x1_5bit.v
-set_global_assignment -name VERILOG_FILE hw4/mux_2x1.v
-set_global_assignment -name VERILOG_FILE hw4/msb_alu_1.v
-set_global_assignment -name VERILOG_FILE hw4/mips32.v
-set_global_assignment -name VERILOG_FILE hw4/mips_registers.v
-set_global_assignment -name VERILOG_FILE hw4/mips_memory.v
-set_global_assignment -name VERILOG_FILE hw4/instruction_memory.v
-set_global_assignment -name VERILOG_FILE hw4/full_adder.v
-set_global_assignment -name VERILOG_FILE hw4/extend.v
-set_global_assignment -name VERILOG_FILE hw4/control_unit.v
-set_global_assignment -name VERILOG_FILE hw4/concat.v
-set_global_assignment -name VERILOG_FILE hw4/alu_testbench.v
-set_global_assignment -name VERILOG_FILE hw4/alu_32_testbench.v
-set_global_assignment -name VERILOG_FILE hw4/alu_32.v
-set_global_assignment -name VERILOG_FILE hw4/alu_1.v
-set_global_assignment -name VERILOG_FILE hw4/adder_32.v
-set_global_assignment -name VERILOG_FILE hw4/adder_13.v
-set_global_assignment -name VERILOG_FILE hw4/mux_2x1_13.v
+set_global_assignment -name VERILOG_FILE source_files/xor_2.v
+set_global_assignment -name VERILOG_FILE source_files/shifter.v
+set_global_assignment -name VERILOG_FILE source_files/pc.v
+set_global_assignment -name VERILOG_FILE source_files/mux_testbench.v
+set_global_assignment -name VERILOG_FILE source_files/mux_8x1.v
+set_global_assignment -name VERILOG_FILE source_files/mux_4x1_32.v
+set_global_assignment -name VERILOG_FILE source_files/mux_4x1.v
+set_global_assignment -name VERILOG_FILE source_files/mux_2x1_32.v
+set_global_assignment -name VERILOG_FILE source_files/mux_2x1_13.v
+set_global_assignment -name VERILOG_FILE source_files/mux_2x1_5bit.v
+set_global_assignment -name VERILOG_FILE source_files/mux_2x1.v
+set_global_assignment -name VERILOG_FILE source_files/msb_alu_1.v
+set_global_assignment -name VERILOG_FILE source_files/mips32.v
+set_global_assignment -name VERILOG_FILE source_files/mips_registers.v
+set_global_assignment -name VERILOG_FILE source_files/mips_memory.v
+set_global_assignment -name VERILOG_FILE source_files/instruction_memory.v
+set_global_assignment -name VERILOG_FILE source_files/full_adder.v
+set_global_assignment -name VERILOG_FILE source_files/extend.v
+set_global_assignment -name VERILOG_FILE source_files/control_unit.v
+set_global_assignment -name VERILOG_FILE source_files/concat.v
+set_global_assignment -name VERILOG_FILE source_files/alu_testbench.v
+set_global_assignment -name VERILOG_FILE source_files/alu_32_testbench.v
+set_global_assignment -name VERILOG_FILE source_files/alu_32.v
+set_global_assignment -name VERILOG_FILE source_files/alu_1.v
+set_global_assignment -name VERILOG_FILE source_files/adder_32.v
+set_global_assignment -name VERILOG_FILE source_files/adder_13.v
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
