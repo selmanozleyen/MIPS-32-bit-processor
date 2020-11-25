@@ -16,7 +16,7 @@ These are the instructions supported with some of their control signals.
 		</head>
 		<body>
 			<b>
-				<u>Signal Table</u>
+				<u>Instruction Table</u>
 			</b>
 			<hr>
 				<table cellspacing=0 border=1>
