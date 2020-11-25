@@ -12,8 +12,7 @@ These are the instructions supported with some of their control signals.
 <html>
 	<head>
 		<meta charset="UTF-8">
-			<title>able</title>
-		</head>
+	</head>
 		<body>
 			<b>
 				<u>Instruction Table</u>
@@ -466,5 +465,5 @@ These are the instructions supported with some of their control signals.
 					</tr>
 				</table>
 				<hr>
-				</body>
-			</html>
+	</body>
+</html>
